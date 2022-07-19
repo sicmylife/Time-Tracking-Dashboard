@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #0f1424;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  width: 88%;
+  font-size: 16px;
+  margin: 2rem auto;
+}
+
+.menu-card {
+  background-color: #1c1f4a;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.card-report {
+  background-color: #5847eb;
+  border-radius: 10px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1.8rem;
+}
+
+.card-report img {
+  width: 26%;
+  max-width: 130px;
+  border: solid 3px white;
+  border-radius: 50%;
+}
+
+.report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.report p {
+  color: #bdc1ff;
+}
+
+.report .name {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+
+.menu .menu-link {
+  color: #6f76c8;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.menu .menu-link:hover {
+  color: white;
+}
+
+.menu .menu-active {
+  color: white;
+}
+
+.regular-card {
+  width: 100%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: 94% -15px;
+  background-size: 120px;
+}
+
+.regular-card .property-card {
+  background-color: #1c1f4a;
+  border-radius: 20px;
+  margin-top: 3.5rem;
+  padding: 1.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .6rem;
+}
+
+.regular-card .property-card:hover {
+  background-color: #5847eb;
+}
+
+.regular-card .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.regular-card .row .title {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.regular-card .row .poinst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.regular-card .row .poinst:hover .point {
+  background-color: white;
+}
+
+.regular-card .row .poinst::before {
+  content: "";
+}
+
+.regular-card .row .poinst .point {
+  background-color: #bdc1ff;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.regular-card .row-2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.regular-card .row-2 .hours {
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+.work {
+  background-color: #ff8c66;
+  background-image: url("./images/icon-work.svg");
+}
+
+.play {
+  background-color: #56c2e6;
+  background-image: url("./images/icon-play.svg");
+}
+
+.study {
+  background-color: #ff5c7c;
+  background-image: url("./images/icon-study.svg");
+}
+
+.exercise {
+  background-color: #4acf81;
+  background-image: url("./images/icon-exercise.svg");
+}
+
+.social {
+  background-color: #7536d3;
+  background-image: url("./images/icon-social.svg");
+}
+
+.self-care {
+  background-color: #f1c65b;
+  background-image: url("./images/icon-self-care.svg");
+}
+
+@media screen and (min-width: 570px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 48%  48%;
+        grid-template-columns: 48%  48%;
+  }
+  .menu-card {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  .menu-card .card-report {
+    gap: 2.5rem;
+  }
+  .regular-card .property-card .row-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .regular-card .property-card .row-2 .hours {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+  }
+  .container {
+    width: 77%;
+    -ms-grid-columns: 23% 23% 23% 23%;
+        grid-template-columns: 23% 23% 23% 23%;
+    gap: 3rem;
+  }
+  .menu-card {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/ span 2;
+    grid-column: unset;
+    height: 100%;
+  }
+  .menu-card .card-report {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 70%;
+    padding: 4.4rem 2rem;
+  }
+  .menu-card .card-report img {
+    width: 7rem;
+  }
+  .menu-card .card-report .report {
+    margin-top: 1rem;
+  }
+  .menu-card .card-report .report .name {
+    font-size: 2rem;
+  }
+  .menu-card .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 30%;
+  }
+  .regular-card .property-card {
+    margin-top: 4rem;
+    padding: 2.5rem;
+  }
+  .regular-card .property-card .row-2 .hours {
+    font-size: 3rem;
+    padding-top: 1rem;
+  }
+  .regular-card .property-card .row-2 .description {
+    padding-top: .7rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
